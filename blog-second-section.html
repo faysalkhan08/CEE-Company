@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="blog-second-section.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Company Logo">
+            </div>
+            <nav>
+                <ul class="nav-center">
+                    <li><a href="index.html" class="nav-link">HOME</a></li>
+                    <li><a href="about-page.html" class="nav-link">ABOUT US</a></li>
+                    <li><a href="services.html" class="nav-link">SERVICE</a></li>
+                    <li><a href="blog.html" class="nav-link active">BLOG</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="contact-btn">Contact Us</a>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+    <!-- 2nd portion -->
+    <div class="text-main">
+        <h2>Receive a quote</h2>
+        <p>Have some questions about our services? We are here to help you. Fill <br> out
+            the form below and we'll get
+            back to you as soon as possible.</p>
+    </div>
+    <div class="main-div-2">
+        <div class="quote-form-container">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="whatsapp">Whatsapp</label>
+                    <input type="tel" id="whatsapp" placeholder="01234567896" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Please enter service you need</label>
+                    <select id="service" required>
+                        <option value="">Select service</option>
+                        <option value="uiux">UI/UX</option>
+                        <option value="development">Web Development</option>
+                        <option value="devops">DevOps</option>
+                        <option value="bookkeeping">Bookkeeping</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Services</label>
+                    <select id="service" required>
+                        <option value="uiux">UI/UX</option>
+                        <option value="development">Web Development</option>
+                        <option value="devops">DevOps</option>
+                        <option value="bookkeeping">Bookkeeping</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="project">Project Details</label>
+                    <input type="url" id="project" placeholder="website.example.com" required>
+                </div>
+                <div class="form-group-2 half-width">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Write your message" required></textarea>
+                </div>
+            </form>
+            <button type="submit">Send Message</button>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <!-- <div class="logo-circle">Ɔ</div> -->
+                <section class="animation-box">
+                    <div class="reverse-c">C</div>
+                    <div class="letter c"><span>C</span></div>
+                    <div class="letter e1"><span>E</span></div>
+                    <div class="letter e2"><span>E</span></div>
+                </section>
+            </div>
+
+            <div class="footer-column">
+                <h3>Get in touch</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Gilgit Danyour thrift-socity<br>3rd floor</p>
+                <p><i class="fas fa-envelope"></i> tosifsheraz00@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +923499763379</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li></i><i class="fa-solid fa-square"></i> UI UX Designing</li>
+                    <li><i class="fa-solid fa-square"></i> Bookkeeping</li>
+                    <li><i class="fa-solid fa-square"></i> Development</li>
+                    <li><i class="fa-solid fa-square"></i> Devops</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><i class="fa-solid fa-square"></i> About Us</li>
+                    <li><i class="fa-solid fa-square"></i> Services</li>
+                    <li><i class="fa-solid fa-square"></i> Blogs</li>
+                    <li><i class="fa-solid fa-square"></i> Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        toggleBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
